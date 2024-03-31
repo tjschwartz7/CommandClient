@@ -1,1 +1,4 @@
-﻿  SocketClient.vcxproj -> C:\Users\tjsch\source\repos\SocketClient\x64\Debug\SocketClient.exe
+﻿  client.cpp
+C:\Users\tjsch\source\repos\SocketClient\SocketClient\client.cpp(72,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tjsch\source\repos\SocketClient\SocketClient\client.cpp(84,47): warning C4244: 'argument': conversion from 'SOCKET' to 'int', possible loss of data
+  SocketClient.vcxproj -> C:\Users\tjsch\source\repos\SocketClient\x64\Debug\SocketClient.exe

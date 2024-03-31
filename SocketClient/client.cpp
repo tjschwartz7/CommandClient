@@ -53,6 +53,7 @@ int main() {
     // Do-while loop to send and receive data
     char buf[4096];
     std::string userInput;
+    bool connectionTerminated = false;
 
     do 
     {
@@ -73,7 +74,6 @@ int main() {
             if (sendResult != SOCKET_ERROR) {
                 // Wait for response
                 ZeroMemory(buf, 4096);
-                std::cout << "Attempting to rx a message: " << std::endl;
 
                 socket_timeout.tv_sec = 1;
                 socket_timeout.tv_usec = 0;
@@ -86,13 +86,12 @@ int main() {
                 {
                     //Any nonpositive integer is a failure case
                 case -1:
-                    break;
                 case 0:
                     //Timed out
+                    connectionTerminated = true;
                     break;
                 default:
                     int bytesReceived = recv(sock, buf, 4096, 0);
-                    std::cout << "Received: " << std::endl;
                     if (bytesReceived > 0) {
                         // Echo response to console
                         std::cout << "Server> " << std::string(buf, 0, bytesReceived) << std::endl;
@@ -107,7 +106,7 @@ int main() {
         }
 
         ZeroMemory(buf, 4096);
-    } while (userInput.size() > 0);
+    } while (userInput.size() > 0 && !connectionTerminated);
 
     // Gracefully close everything
     closesocket(sock);

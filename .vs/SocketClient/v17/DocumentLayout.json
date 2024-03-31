@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tjsch\\source\\repos\\SocketClient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14676B89-3050-4E69-AA12-8362F22192A3}|SocketClient\\SocketClient.vcxproj|C:\\Users\\tjsch\\source\\repos\\SocketClient\\SocketClient\\client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{14676B89-3050-4E69-AA12-8362F22192A3}|SocketClient\\SocketClient.vcxproj|solutionrelative:SocketClient\\client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "client.cpp",
+              "DocumentMoniker": "C:\\Users\\tjsch\\source\\repos\\SocketClient\\SocketClient\\client.cpp",
+              "RelativeDocumentMoniker": "SocketClient\\client.cpp",
+              "ToolTip": "C:\\Users\\tjsch\\source\\repos\\SocketClient\\SocketClient\\client.cpp",
+              "RelativeToolTip": "SocketClient\\client.cpp",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAFYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-30T21:19:16.195Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
